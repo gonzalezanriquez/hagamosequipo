@@ -15,7 +15,18 @@
 </head>
 
 <body class="bg-black text-white">
-
+<nav id="navbar"
+     class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out bg-transparent text-white py-4 px-8 flex justify-between items-center backdrop-blur-sm">
+  <div class="flex items-center gap-4">
+    <img src="img/logo.png" alt="Logo" class="w-8 h-8">
+    <span class="font-bold text-lg">Hagamos Equipo</span>
+  </div>
+  <ul class="flex space-x-6 font-semibold">
+    <li><a href="#hero" class="hover:underline">Inicio</a></li>
+    <li><a href="#obras" class="hover:underline">Obras</a></li>
+    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+  </ul>
+</nav>
     <!-- Hero Section with Parallax -->
     <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
         <div class="absolute inset-0 bg-fixed bg-center bg-cover"
@@ -245,7 +256,18 @@
             </form>
         </section>
     </div>
-
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 80) {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("bg-black", "bg-opacity-80", "shadow-lg");
+    } else {
+      navbar.classList.remove("bg-black", "bg-opacity-80", "shadow-lg");
+      navbar.classList.add("bg-transparent");
+    }
+  });
+</script>
 </body>
 
 </html>
