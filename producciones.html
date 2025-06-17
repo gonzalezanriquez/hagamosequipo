@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hagamos Equipo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo/estilo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <script src="https://unpkg.com/heroicons@2.0.16/dist/24/outline.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 2.2s ease-out forwards;
+    }
+  </style>
+
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+   <nav id="navbar"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out bg-transparent text-white py-4 px-8 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+    <div class="flex items-center gap-4">
+
+    </div>
+
+<ul class="flex space-x-8 justify-center">
+  <li><a href="index.html#hero" class="hover:underline transition duration-200">Inicio</a></li>
+  <li><a href="index.html#obras" class="hover:underline transition duration-200">Obras</a></li>
+  <li><a href="index.html#equipo" class="hover:underline transition duration-200">Equipo</a></li>
+  <li><a href="index.html#prensa" class="hover:underline transition duration-200">Prensa</a></li>
+  <li><a href="index.html#contacto" class="hover:underline transition duration-200">Contacto</a></li>
+</ul>
+
+    <!-- Derecha (vacía para balancear) -->
+    <div class="w-16"></div>
+  </div>
+</nav>
+
+  
+<section id="obras" class="py-32 bg-black text-white text-center font-[Montserrat]">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12">Producciones</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto px-6">
+
+    <!-- Card 1 -->
+    <div class="flex flex-col items-center">
+      <img src="img/elcuartodevernoica.jpg" alt="El Cuarto de Verónica"
+           class="w-full h-auto rounded-lg shadow-md mb-6">
+      <h3 class="font-semibold text-lg">Clarín Espectáculos</h3>
+      <p class="text-sm mt-2 max-w-xs">
+        El Cuarto de Verónica estremece desde su primera escena. Una producción impecable que desafía al espectador con intensidad emocional.
+      </p>
+      <div class="text-white text-2xl mt-3">★★★★★</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col items-center">
+      <img src="img/teesperoenlaoscuridad.jpg" alt="Te Espero en la Oscuridad"
+           class="w-full h-auto rounded-lg shadow-md mb-6">
+      <h3 class="font-semibold text-lg">Página 12</h3>
+      <p class="text-sm mt-2 max-w-xs">
+        Con actuaciones sensibles y una puesta minimalista pero efectiva, ‘Wait Until Dark’ recupera el suspenso clásico con lenguaje contemporáneo.
+      </p>
+      <div class="text-white text-2xl mt-3">★★★★★</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex flex-col items-center">
+      <img src="img/afterglow.jpg" alt="Afterglow"
+           class="w-full h-auto rounded-lg shadow-md mb-6">
+      <h3 class="font-semibold text-lg">La Nación</h3>
+      <p class="text-sm mt-2 max-w-xs">
+        Una propuesta audaz, conmovedora y sin concesiones. ‘Afterglow’ confirma que el teatro independiente puede ser tan potente como necesario.
+      </p>
+      <div class="text-white text-2xl mt-3">★★★★★</div>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
